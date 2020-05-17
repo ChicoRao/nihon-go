@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+  font-family: Lato;
+}
+
+#page-body {
+  padding: 0px 5%;
+}
+
+/* Homepage */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#gameTitle {
+  font-weight: 400;
+  font-size: 150px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 6%;
+  margin: 100px 60px 40px 60px;
+}
+
+.home-page p {
+  font-weight: 300;
+  font-size: 50px;
+  margin: 20px 0px;
+}
+
+#start-button {
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: pointer;
+  margin: 20px 0px;
+  width: 200px;
+  font-size: 25px;
+  transition: all 0.4s ease 0s;
+}
+
+#start-button:hover {
+  background-color: rgb(69, 238, 229);
+  transform: scale(1.1);
+}
+
+
+/*
+  Game Menu
+*/
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game-menu h2 {
+  font-weight: 400;
+  font-size: 60px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 6%;
+  margin: 100px 60px 30px 60px;
+}
+
+.game-menu ul {
+  font-weight: 300;
+  font-size: 30px;
+  list-style: none;
+  margin-right: 45px;
+}
+
+.game-menu ul li {
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 6%;
+  margin: 15px 0px;
+}
+
+.game-menu ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+
+@media (max-width: 1100px) {
+  #gameTitle {
+    font-size: 100px;
+  }
+  .App p {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  #gameTitle {
+    font-size: 80px;
+  }
+  .App p {
+    font-size: 30px;
+  }
+}
+
