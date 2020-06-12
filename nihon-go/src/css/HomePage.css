@@ -1,0 +1,37 @@
+
+/* Homepage */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gameTitle {
+  font-weight: 400;
+  font-size: 150px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 6%;
+  margin: 100px 60px 40px 60px;
+}
+
+.home-page p {
+  font-weight: 300;
+  font-size: 50px;
+  margin: 20px 0px;
+}
+
+#start-button {
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: pointer;
+  margin: 20px 0px;
+  width: 200px;
+  font-size: 25px;
+  transition: all 0.4s ease 0s;
+}
+
+#start-button:hover {
+  background-color: rgb(69, 238, 229);
+  transform: scale(1.1);
+}
