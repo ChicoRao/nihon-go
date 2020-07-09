@@ -33,8 +33,6 @@ function random(arr) {
 
 export const generate = (count = 50) => {
     let hiraganaList = Object.keys(hiraganaToRomaji);
-    // console.log(hiraganaList);
-    // console.log(hiraganaToRomaji[hiraganaList[hiraganaList*Math.random() << 0]]);
 
     return new Array(count).fill().map(_ => random(hiraganaList));
 }
