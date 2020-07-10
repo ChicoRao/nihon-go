@@ -20,12 +20,12 @@
 
 .typing-container {
     text-align: center;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .Character {
     white-space: pre;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .Character-current {
@@ -33,7 +33,7 @@
     border-radius: 5px;
     color: white;
     padding: 5px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .Character-out {
@@ -41,7 +41,7 @@
 }
 
 .typed-text-container {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .score {

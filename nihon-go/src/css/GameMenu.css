@@ -32,6 +32,6 @@
 }
 
 .game-menu ul li:hover {
-  background-color: black;
+  background-color: rgb(233, 139, 17);
   color: white;
 }

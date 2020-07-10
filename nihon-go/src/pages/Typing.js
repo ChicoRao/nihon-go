@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, generatePath } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { generate, hiraganaToRomaji } from '../utils/typing';
 import useKeyPress from '../hooks/useKeyPress';
 import { currentTime } from '../utils/time';
@@ -36,7 +36,7 @@ function Typing() {
     const [startTime, setStartTime] = useState();
     // const [wpm, setWpm] = useState(0);
     const [score, setScore] = useState(0);
-    const [typedText, setTypedText] = useState(" ");
+    const [typedText, setTypedText] = useState(' ');
 
     useKeyPress(key => {
         if (!isDone) {
@@ -139,10 +139,10 @@ function Typing() {
                     <div className="typing-container">
                         <p className="Character">
                         <span className="Character-out">
-                            {(leftPadding + outgoingChars).slice(-15)}
+                            {(leftPadding + outgoingChars).slice(-11)}
                         </span>
                         <span className="Character-current">{currentChar}</span>
-                        <span>{incomingChars.substr(0,15)}</span>
+                        <span>{incomingChars.substr(0,11)}</span>
                         </p>
                     </div>
                     <h3 className="typed-text-container">
