@@ -5,9 +5,13 @@ const useKeyPress = callback => {
 
     useEffect(() => {
         const downHandler = ({key}) => {
-            if (keyPressed !== key && key.length === 1) {
-                setKeyPressed(key);
-                callback && callback(key);
+            if (keyPressed !== key) {
+                if(key.length === 1) {
+                    setKeyPressed(key);
+                    callback && callback(key);
+                }else {
+                    callback && callback(key);
+                }
             }
         };
 

@@ -43,8 +43,16 @@ function Typing() {
             if (!startTime) {
                 setStartTime(currentTime());
             }
+
+            //If key entered is backspace, then remove the last letter from textbox
+            if(key === "Backspace") {
+                console.log("It is backspace");
+                setTypedText(typedText.slice(0,-1));
+                romanjiContainer = romanjiContainer.slice(0,-1);
+                return;
+            }
         
-            // console.log("typed key: " + key);
+            console.log("typed key: " + key);
             // console.log("current char: " + currentChar);
         
             let updatedOutgoingChars = outgoingChars;
@@ -62,6 +70,7 @@ function Typing() {
             romanjiContainer += key;
             setTypedText(romanjiContainer);
         
+            //Used because some hiragana has multiple romanjis
             if (romanjiContainer.length < maxAcceptedLength) {
                 for (let i = 0; i < romanjiList.length; i++) {
                     if (romanjiContainer === romanjiList[i]) {
