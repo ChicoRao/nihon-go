@@ -7,7 +7,7 @@ const GameMenu = () => (
         <div className="game-menu">
             <h2>Nihon Go</h2>
             <ul>
-                <Link to="/quiz" style={{textDecoration: 'none', color: 'black'}}><li>Hiragana/ Katakana Quiz</li></Link>
+                <Link to="/quiz" style={{textDecoration: 'none', color: 'black', pointerEvents: 'none'}}><li>Vocab Quiz - Coming Soon</li></Link>
                 <Link to="/typing" style={{textDecoration: 'none', color: 'black'}}><li>NihonType</li></Link>
                 <Link to="/settings" style={{textDecoration: 'none', color: 'black'}}><li>Settings</li></Link>
                 <Link to="/" style={{textDecoration: 'none', color: 'black'}}><li>Home</li></Link>

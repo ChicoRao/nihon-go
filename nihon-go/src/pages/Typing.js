@@ -70,7 +70,7 @@ function Typing() {
             romanjiContainer += key;
             setTypedText(romanjiContainer);
         
-            //Used because some hiragana has multiple romanjis
+            //Used because some hiragana has multiple romanjis (ex: jya vs ja)
             if (romanjiContainer.length < maxAcceptedLength) {
                 for (let i = 0; i < romanjiList.length; i++) {
                     if (romanjiContainer === romanjiList[i]) {

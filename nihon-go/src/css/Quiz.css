@@ -1,0 +1,38 @@
+/*
+    Quiz game
+*/
+
+#quiz-question {
+    font-size: 25px;
+}
+
+#quiz-prompt {
+    font-size: 28px;
+}
+
+.ans-btn {
+    font-size: 30px;
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px 20px;
+}
+
+.ans-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.quiz-score {
+
+}
+
+.button {
+    margin: 15px;
+    border: 2px solid;
+    padding: 6px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
