@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     /* text-align: center; */
 }
 
@@ -41,7 +42,7 @@
 }
 
 .typed-text-container {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .score {
@@ -71,4 +72,58 @@
 .buttons {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 950px) {
+    .typing-game h1 {
+        font-size: 45px;
+    }
+
+    .Character {
+        font-size: 40px;
+    }
+    
+    .Character-current {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 740px) {
+    .typing-game h1 {
+        font-size: 35px;
+    }
+
+    .Character {
+        font-size: 30px;
+    }
+    
+    .Character-current {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .typing-game h1 {
+        font-size: 30px;
+    }
+
+    .Character {
+        font-size: 25px;
+    }
+    
+    .Character-current {
+        font-size: 25px;
+    }
+
+    .typed-text-container {
+        font-size: 20px;
+    }
+
+    .score {
+        font-size: 15px;
+    }
+    
+    .button {
+        font-size: 15px;
+    }
 }
