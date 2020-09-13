@@ -9,7 +9,7 @@ const GameMenu = () => (
             <ul>
                 <Link to="/quiz" style={{textDecoration: 'none', color: 'black', pointerEvents: 'none'}}><li>Vocab Quiz - Coming Soon</li></Link>
                 <Link to="/typing" style={{textDecoration: 'none', color: 'black'}}><li>NihonType</li></Link>
-                <Link to="/settings" style={{textDecoration: 'none', color: 'black'}}><li>Settings</li></Link>
+                <Link to="/settings" style={{textDecoration: 'none', color: 'black', display: 'none'}}><li>Settings</li></Link>
                 <Link to="/" style={{textDecoration: 'none', color: 'black'}}><li>Home</li></Link>
             </ul>
         </div>
