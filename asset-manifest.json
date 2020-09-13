@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/nihon-go/static/css/main.f5502c2f.chunk.css",
+    "main.js": "/nihon-go/static/js/main.2de39c8c.chunk.js",
+    "main.js.map": "/nihon-go/static/js/main.2de39c8c.chunk.js.map",
+    "runtime-main.js": "/nihon-go/static/js/runtime-main.3af7e206.js",
+    "runtime-main.js.map": "/nihon-go/static/js/runtime-main.3af7e206.js.map",
+    "static/js/2.762d9248.chunk.js": "/nihon-go/static/js/2.762d9248.chunk.js",
+    "static/js/2.762d9248.chunk.js.map": "/nihon-go/static/js/2.762d9248.chunk.js.map",
+    "index.html": "/nihon-go/index.html",
+    "precache-manifest.379bb8d78081e0331ba697743f918312.js": "/nihon-go/precache-manifest.379bb8d78081e0331ba697743f918312.js",
+    "service-worker.js": "/nihon-go/service-worker.js",
+    "static/css/main.f5502c2f.chunk.css.map": "/nihon-go/static/css/main.f5502c2f.chunk.css.map",
+    "static/js/2.762d9248.chunk.js.LICENSE.txt": "/nihon-go/static/js/2.762d9248.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3af7e206.js",
+    "static/js/2.762d9248.chunk.js",
+    "static/css/main.f5502c2f.chunk.css",
+    "static/js/main.2de39c8c.chunk.js"
+  ]
+}
