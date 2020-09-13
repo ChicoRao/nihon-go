@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "952f8ac280be556ef41874f844f53a08",
+    "revision": "573a9a60b5d1e3beef41f32c23cc4ef2",
     "url": "/nihon-go/index.html"
   },
   {
-    "revision": "a8e317bec2a87a62b4b5",
-    "url": "/nihon-go/static/css/main.f5502c2f.chunk.css"
+    "revision": "70a3147da42d750f9e5c",
+    "url": "/nihon-go/static/css/main.73737ffa.chunk.css"
   },
   {
     "revision": "11c5506f265e0bc9099c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nihon-go/static/js/2.03f688f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8e317bec2a87a62b4b5",
+    "revision": "70a3147da42d750f9e5c",
     "url": "/nihon-go/static/js/main.09e3b286.chunk.js"
   },
   {
