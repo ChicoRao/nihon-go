@@ -1,37 +1,37 @@
-/*
-  Game Menu
-*/
+/* Game Menu */
 .game-menu {
+  height: 100vh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  background-image: url("/sakura-background.png");
 }
 
 .game-menu h2 {
-  font-weight: 400;
-  font-size: 60px;
-  border: 2px solid;
-  border-radius: 10px;
-  padding: 10px 6%;
-  margin: 100px 60px 30px 60px;
+  font-weight: 600;
+  font-size: 70px;
+  padding: 10px 0;
+  color: rgb(232, 79, 37);
 }
 
 .game-menu ul {
-  font-weight: 300;
   font-size: 30px;
   list-style: none;
-  margin-right: 45px;
+  padding: 0;
+  margin: 0;
+  width: 300px;
 }
 
-.game-menu ul li {
-  border: 2px solid;
+.game-menu ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 6%;
   border-radius: 10px;
-  padding: 10px 6%;
-  margin: 15px 0px;
 }
 
 .game-menu ul li:hover {
-  background-color: rgb(233, 139, 17);
-  color: white;
+  transform: scale(1.1);
 }

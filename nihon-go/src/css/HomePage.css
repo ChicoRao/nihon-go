@@ -41,7 +41,7 @@
 
 footer {
   position: fixed;
-  padding: 10px;
+  padding: 7px;
   bottom: 0;
   right: 0;
 }
@@ -54,7 +54,7 @@ footer {
 
 @media (max-width: 700px) {
   .home-page #gameTitle {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .home-page p {

@@ -1,37 +1,33 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../css/GameMenu.css";
 
 const GameMenu = () => (
-  <React.Fragment>
+  <>
     <div className="game-menu">
-      <h2>Nihon Go</h2>
+      <h2>Nihon GO</h2>
       <ul>
-        <Link
-          to="/quiz"
-          style={{
-            textDecoration: "none",
-            color: "black",
-            pointerEvents: "none",
-          }}
-        >
-          <li>Vocab Quiz - Coming Soon</li>
-        </Link>
-        <Link to="/typing" style={{ textDecoration: "none", color: "black" }}>
-          <li>NihonType</li>
-        </Link>
-        <Link
-          to="/settings"
-          style={{ textDecoration: "none", color: "black", display: "none" }}
-        >
-          <li>Settings</li>
-        </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-          <li>Home</li>
-        </Link>
+        <li>
+          <Link
+            to="/quiz"
+            style={{
+              pointerEvents: "none",
+            }}
+          >
+            Vocab Quiz
+          </Link>
+        </li>
+        <li>
+          <Link to="/typing">NihonType</Link>
+        </li>
+        <li>
+          <Link to="/settings">Settings</Link>
+        </li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
       </ul>
     </div>
-  </React.Fragment>
+  </>
 );
 
 export default GameMenu;

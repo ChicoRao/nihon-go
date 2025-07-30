@@ -1,129 +1,127 @@
-/*
-    Typing game
-*/
+/* Typing game */
 
 .typing-game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* text-align: center; */
 }
 
 .typing-game h1 {
-    font-weight: 400;
-    font-size: 50px;
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 10px 6%;
-    margin: 100px 60px 30px 60px;
+  font-weight: 400;
+  font-size: 50px;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 6%;
+  margin: 100px 60px 30px 60px;
 }
 
 .typing-container {
-    text-align: center;
-    padding: 0 15px;
+  text-align: center;
+  padding: 0 15px;
 }
 
 .Character {
-    white-space: pre;
-    font-size: 50px;
+  white-space: pre;
+  font-size: 50px;
 }
 
 .Character-current {
-    background-color: #00c0da;
-    border-radius: 5px;
-    color: white;
-    padding: 5px;
-    font-size: 50px;
+  background-color: #00c0da;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  font-size: 50px;
 }
 
 .Character-out {
-    color: rgb(141, 141, 141);
+  color: rgb(141, 141, 141);
 }
 
 .typed-text-container {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .score {
-    border: 2px solid;
-    border-color: rgb(0, 153, 255);
-    border-radius: 10px;
-    background-color: rgb(0, 153, 255);
-    padding: 10px 20px;
-    color: white;
-    /* width: 100px; */
+  border: 2px solid;
+  border-color: rgb(0, 153, 255);
+  border-radius: 10px;
+  background-color: rgb(0, 153, 255);
+  padding: 10px 20px;
+  color: white;
+  /* width: 100px; */
 }
 
 .button {
-    margin: 15px;
-    border: 2px solid;
-    padding: 6px 15px;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
+  margin: 15px;
+  border: 2px solid;
+  padding: 6px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .button:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 950px) {
-    .typing-game h1 {
-        font-size: 45px;
-    }
+  .typing-game h1 {
+    font-size: 45px;
+  }
 
-    .Character {
-        font-size: 40px;
-    }
-    
-    .Character-current {
-        font-size: 40px;
-    }
+  .Character {
+    font-size: 40px;
+  }
+
+  .Character-current {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 740px) {
-    .typing-game h1 {
-        font-size: 35px;
-    }
+  .typing-game h1 {
+    font-size: 35px;
+  }
 
-    .Character {
-        font-size: 30px;
-    }
-    
-    .Character-current {
-        font-size: 30px;
-    }
+  .Character {
+    font-size: 30px;
+  }
+
+  .Character-current {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 530px) {
-    .typing-game h1 {
-        font-size: 30px;
-    }
+  .typing-game h1 {
+    font-size: 30px;
+  }
 
-    .Character {
-        font-size: 25px;
-    }
-    
-    .Character-current {
-        font-size: 25px;
-    }
+  .Character {
+    font-size: 25px;
+  }
 
-    .typed-text-container {
-        font-size: 20px;
-    }
+  .Character-current {
+    font-size: 25px;
+  }
 
-    .score {
-        font-size: 15px;
-    }
-    
-    .button {
-        font-size: 15px;
-    }
+  .typed-text-container {
+    font-size: 20px;
+  }
+
+  .score {
+    font-size: 15px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
 }
