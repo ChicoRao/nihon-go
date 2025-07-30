@@ -4,31 +4,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   height: 100vh;
-  /* text-align: center; */
+  background-image: url("/sakura-background.png");
+  text-align: center;
 }
 
 .typing-game h1 {
-  font-weight: 400;
-  font-size: 50px;
-  border: 2px solid;
+  font-weight: 500;
+  font-size: 70px;
   border-radius: 10px;
   padding: 10px 6%;
-  margin: 100px 60px 30px 60px;
+  background-color: rgb(232, 79, 37);
+  color: white;
 }
 
-.typing-container {
-  text-align: center;
-  padding: 0 15px;
+.character-container {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
-.Character {
+.characters {
   white-space: pre;
   font-size: 50px;
 }
 
-.Character-current {
-  background-color: #00c0da;
+.current-character {
+  background-color: rgb(232, 79, 37);
   border-radius: 5px;
   color: white;
   padding: 5px;

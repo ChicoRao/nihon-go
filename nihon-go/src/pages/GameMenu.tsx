@@ -17,7 +17,7 @@ const GameMenu = () => (
           </Link>
         </li>
         <li>
-          <Link to="/typing">NihonType</Link>
+          <Link to="/typing-game">NihonType</Link>
         </li>
         <li>
           <Link to="/settings">Settings</Link>

@@ -15,7 +15,7 @@ function App() {
           <Route path="/menu" element={<GameMenu />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/quiz" element={<Quiz />} />
-          <Route path="/typing" element={<Typing />} />
+          <Route path="/typing-game" element={<Typing />} />
         </Routes>
       </div>
     </Router>
