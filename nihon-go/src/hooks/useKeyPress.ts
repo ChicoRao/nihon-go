@@ -1,33 +1,36 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-const useKeyPress = callback => {
-    const [keyPressed, setKeyPressed] = useState();
+type KeyCallback = (key: string) => void;
 
-    useEffect(() => {
-        const downHandler = ({key}) => {
-            if (keyPressed !== key) {
-                if(key.length === 1) {
-                    setKeyPressed(key);
-                    callback && callback(key);
-                }else {
-                    callback && callback(key);
-                }
-            }
-        };
+const isAlphanumeric = (key: string): boolean => /^[a-zA-Z0-9]$/.test(key);
 
-        const upHandler = () => {
-            setKeyPressed(null);
-        };
+const useKeyPress = (callback?: KeyCallback): string | null => {
+  const [keyPressed, setKeyPressed] = useState<string | null>(null);
 
-        window.addEventListener('keydown', downHandler);
-        window.addEventListener('keyup', upHandler);
+  useEffect(() => {
+    const downHandler = (event: KeyboardEvent) => {
+      const { key } = event;
 
-        return () => {
-            window.removeEventListener('keydown', downHandler);
-            window.removeEventListener('keyup', upHandler);
-        };
-    });
-    return keyPressed;
-}
+      if (isAlphanumeric(key)) {
+        setKeyPressed(key);
+        callback?.(key);
+      }
+    };
+
+    const upHandler = () => {
+      setKeyPressed(null);
+    };
+
+    window.addEventListener("keydown", downHandler);
+    window.addEventListener("keyup", upHandler);
+
+    return () => {
+      window.removeEventListener("keydown", downHandler);
+      window.removeEventListener("keyup", upHandler);
+    };
+  }, [callback]);
+
+  return keyPressed;
+};
 
 export default useKeyPress;
