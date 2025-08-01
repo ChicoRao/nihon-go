@@ -53,7 +53,6 @@ function Typing() {
     <>
       <div className="typing-game">
         <h1>NihonType</h1>
-        {/* <div className="character-container"> */}
         <p className="characters">
           <span className="past-characters">{pastChars}</span>
           {index < 30 && (
@@ -73,8 +72,8 @@ function Typing() {
         />
         <h3 className="score">Score: {score}</h3>
         <div className="buttons">
-          <Link to="/">
-            <button className="home-button button">Home</button>
+          <Link to="/menu">
+            <button className="home-button button">Menu</button>
           </Link>
           <button className="restart button" onClick={restart}>
             Restart
