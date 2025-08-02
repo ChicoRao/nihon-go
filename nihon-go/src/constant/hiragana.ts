@@ -103,3 +103,5 @@ export const hiraganaToRomaji: { [hiragana: string]: string[] } = {
   を: ["wo"],
   ん: ["n"],
 };
+
+export const LIST_LENGTH = 30;

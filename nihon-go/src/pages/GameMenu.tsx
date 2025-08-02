@@ -7,17 +7,20 @@ const GameMenu = () => (
       <h2>Nihon GO</h2>
       <ul>
         <li>
+          <Link to="/quiz">NihonQuiz</Link>
+        </li>
+        <li>
+          <Link to="/typing-game">NihonType</Link>
+        </li>
+        <li>
           <Link
-            to="/quiz"
+            to="/"
             style={{
               pointerEvents: "none",
             }}
           >
-            Vocab Quiz
+            NihonTalk - Coming Soon
           </Link>
-        </li>
-        <li>
-          <Link to="/typing-game">NihonType</Link>
         </li>
         <li>
           <Link to="/settings">Settings</Link>
