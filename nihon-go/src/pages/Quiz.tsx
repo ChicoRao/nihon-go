@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { LIST_LENGTH } from "../constant/quiz";
 import { generate } from "../utils/quiz";
 import "../css/Quiz.css";
+import ResultPopup from "../component/ResultPopup";
 
 function Quiz() {
   const promptList = useRef(generate(LIST_LENGTH));
@@ -13,6 +14,7 @@ function Quiz() {
   const [options, setOptions] = useState(
     shuffle(promptList.current[0].options)
   );
+  const [isDone, setIsDone] = useState(false);
 
   function shuffle(arr: any) {
     const array = [...arr];
@@ -24,10 +26,18 @@ function Quiz() {
   }
 
   function checkAnswer(option: string) {
-    const newIndex = index + 1;
+    if (isDone || index >= LIST_LENGTH) return;
+
     if (option === promptList.current[index].answer) {
       const newScore = score + 1;
       setScore(newScore);
+    }
+
+    const newIndex = index + 1;
+
+    if (newIndex >= LIST_LENGTH) {
+      setIsDone(true);
+      return;
     }
 
     setIndex(newIndex);
@@ -70,6 +80,9 @@ function Quiz() {
           </button>
         </div>
       </div>
+      {isDone && (
+        <ResultPopup score={score} total={LIST_LENGTH} onRestart={restart} />
+      )}
     </>
   );
 }

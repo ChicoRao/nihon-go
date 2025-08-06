@@ -3,37 +3,41 @@ import "../css/component/ResultPopup.css";
 
 interface ResultPopupProps {
   score: number;
-  accuracy: string;
+  accuracy?: string;
   total: number;
-  time: string;
+  time?: string;
   onRestart: () => void;
-  onClose: () => void;
+  // onClose: () => void;
 }
 
 const ResultPopup: React.FC<ResultPopupProps> = ({
   score,
-  accuracy,
+  accuracy = "",
   total,
-  time,
+  time = "",
   onRestart,
-  onClose,
+  // onClose,
 }) => {
   return (
-    <div className="popup-overlay" onClick={onClose}>
+    <div className="popup-overlay">
       <div className="popup">
-        <button className="close-button" onClick={onClose}>
+        {/* <button className="close-button" onClick={onClose}>
           ×
-        </button>
+        </button> */}
         <h2>Results</h2>
         <p>
           <strong>Score:</strong> {score} / {total}
         </p>
-        <p>
-          <strong>Accuracy:</strong> {accuracy}%
-        </p>
-        <p>
-          <strong>Time:</strong> {time}s
-        </p>
+        {accuracy && (
+          <p>
+            <strong>Accuracy:</strong> {accuracy}%
+          </p>
+        )}
+        {time && (
+          <p>
+            <strong>Time:</strong> {time}s
+          </p>
+        )}
         <button className="restart-button" onClick={onRestart}>
           Restart
         </button>

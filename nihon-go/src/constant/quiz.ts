@@ -105,19 +105,9 @@ export const quizQuestions = [
     answer: "book",
   },
   {
-    prompt: "車 (くるま)",
-    options: ["train", "car", "bike", "bus"],
-    answer: "car",
-  },
-  {
     prompt: "電車 (でんしゃ)",
     options: ["plane", "train", "car", "motorcycle"],
     answer: "train",
-  },
-  {
-    prompt: "駅 (えき)",
-    options: ["bus stop", "station", "airport", "market"],
-    answer: "station",
   },
   {
     prompt: "時間 (じかん)",
@@ -200,36 +190,6 @@ export const quizQuestions = [
     answer: "buy",
   },
   {
-    prompt: "高い (たかい)",
-    options: ["big", "tall/expensive", "hot", "heavy"],
-    answer: "tall/expensive",
-  },
-  {
-    prompt: "安い (やすい)",
-    options: ["cheap", "slow", "cold", "light"],
-    answer: "cheap",
-  },
-  {
-    prompt: "大きい (おおきい)",
-    options: ["small", "tall", "big", "thin"],
-    answer: "big",
-  },
-  {
-    prompt: "小さい (ちいさい)",
-    options: ["big", "short", "small", "wide"],
-    answer: "small",
-  },
-  {
-    prompt: "新しい (あたらしい)",
-    options: ["new", "old", "fast", "pretty"],
-    answer: "new",
-  },
-  {
-    prompt: "古い (ふるい)",
-    options: ["fast", "pretty", "used", "old"],
-    answer: "old",
-  },
-  {
     prompt: "白 (しろ)",
     options: ["red", "white", "black", "green"],
     answer: "white",
@@ -269,7 +229,6 @@ export const quizQuestions = [
     options: ["you", "me/I", "he", "they"],
     answer: "me/I",
   },
-  { prompt: "あなた", options: ["me", "you", "them", "him"], answer: "you" },
   { prompt: "彼 (かれ)", options: ["she", "they", "him", "we"], answer: "him" },
   {
     prompt: "彼女 (かのじょ)",
@@ -317,11 +276,6 @@ export const quizQuestions = [
     answer: "who",
   },
   {
-    prompt: "どこ",
-    options: ["why", "when", "where", "what"],
-    answer: "where",
-  },
-  {
     prompt: "どうして",
     options: ["where", "why", "how", "who"],
     answer: "why",
@@ -333,80 +287,6 @@ export const quizQuestions = [
   },
   { prompt: "はい", options: ["no", "maybe", "okay", "yes"], answer: "yes" },
   { prompt: "いいえ", options: ["no", "yes", "sure", "why"], answer: "no" },
-  {
-    prompt: "私 (わたし)",
-    options: ["you", "me/I", "he", "they"],
-    answer: "me/I",
-  },
-  { prompt: "あなた", options: ["me", "you", "them", "him"], answer: "you" },
-  { prompt: "彼 (かれ)", options: ["she", "they", "him", "we"], answer: "him" },
-  {
-    prompt: "彼女 (かのじょ)",
-    options: ["him", "her", "they", "we"],
-    answer: "her",
-  },
-  {
-    prompt: "名前 (なまえ)",
-    options: ["address", "phone", "name", "age"],
-    answer: "name",
-  },
-  {
-    prompt: "電話 (でんわ)",
-    options: ["email", "letter", "phone", "text"],
-    answer: "phone",
-  },
-  {
-    prompt: "番号 (ばんごう)",
-    options: ["date", "number", "year", "email"],
-    answer: "number",
-  },
-  {
-    prompt: "年 (とし)",
-    options: ["month", "week", "year", "day"],
-    answer: "year",
-  },
-  {
-    prompt: "月 (つき)",
-    options: ["sun", "earth", "month/moon", "star"],
-    answer: "month/moon",
-  },
-  {
-    prompt: "日 (ひ)",
-    options: ["sun/day", "moon", "year", "sky"],
-    answer: "sun/day",
-  },
-  {
-    prompt: "何 (なに)",
-    options: ["who", "where", "what", "why"],
-    answer: "what",
-  },
-  {
-    prompt: "誰 (だれ)",
-    options: ["what", "how", "why", "who"],
-    answer: "who",
-  },
-  {
-    prompt: "どこ",
-    options: ["why", "when", "where", "what"],
-    answer: "where",
-  },
-  {
-    prompt: "どうして",
-    options: ["where", "why", "how", "who"],
-    answer: "why",
-  },
-  {
-    prompt: "どうやって",
-    options: ["when", "why", "how", "who"],
-    answer: "how",
-  },
-  { prompt: "はい", options: ["no", "maybe", "okay", "yes"], answer: "yes" },
-  { prompt: "いいえ", options: ["no", "yes", "sure", "why"], answer: "no" },
-  {
-    prompt: "私 (わたし)",
-    options: ["i/me", "you", "they", "he"],
-    answer: "i/me",
-  },
   { prompt: "あなた", options: ["you", "i", "she", "we"], answer: "you" },
   {
     prompt: "これ",
@@ -414,16 +294,6 @@ export const quizQuestions = [
     answer: "this",
   },
   { prompt: "それ", options: ["that", "this", "who", "where"], answer: "that" },
-  {
-    prompt: "何 (なに)",
-    options: ["what", "who", "when", "why"],
-    answer: "what",
-  },
-  {
-    prompt: "誰 (だれ)",
-    options: ["who", "where", "how", "why"],
-    answer: "who",
-  },
   { prompt: "いつ", options: ["when", "where", "why", "what"], answer: "when" },
   {
     prompt: "いくら",
@@ -733,6 +603,286 @@ export const quizQuestions = [
     options: ["scooter", "train", "bicycle", "car"],
     answer: "bicycle",
   },
+  {
+    prompt: "地下鉄 (ちかてつ)",
+    options: ["subway", "tram", "bus", "bike"],
+    answer: "subway",
+  },
+  {
+    prompt: "荷物 (にもつ)",
+    options: ["baggage", "ticket", "passport", "guidebook"],
+    answer: "baggage",
+  },
+  {
+    prompt: "切符 (きっぷ)",
+    options: ["ticket", "coin", "map", "receipt"],
+    answer: "ticket",
+  },
+  {
+    prompt: "美術 (びじゅつ)",
+    options: ["math", "science", "art", "history"],
+    answer: "art",
+  },
+  {
+    prompt: "歴史 (れきし)",
+    options: ["physics", "geography", "history", "biology"],
+    answer: "history",
+  },
+  {
+    prompt: "化学 (かがく)",
+    options: ["chemistry", "math", "PE", "music"],
+    answer: "chemistry",
+  },
+  {
+    prompt: "パン",
+    options: ["bread", "rice", "meat", "cheese"],
+    answer: "bread",
+  },
+  {
+    prompt: "牛乳 (ぎゅうにゅう)",
+    options: ["milk", "juice", "water", "soda"],
+    answer: "milk",
+  },
+  {
+    prompt: "財布 (さいふ)",
+    options: ["wallet", "bag", "ticket", "hat"],
+    answer: "wallet",
+  },
+  {
+    prompt: "飛行場 (ひこうじょう)",
+    options: ["airport", "train station", "bus stop", "port"],
+    answer: "airport",
+  },
+  {
+    prompt: "教室 (きょうしつ)",
+    options: ["classroom", "library", "office", "cafeteria"],
+    answer: "classroom",
+  },
+  {
+    prompt: "鉛筆 (えんぴつ)",
+    options: ["pencil", "pen", "eraser", "ruler"],
+    answer: "pencil",
+  },
+  {
+    prompt: "買い物 (かいもの)",
+    options: ["shopping", "cooking", "working", "reading"],
+    answer: "shopping",
+  },
+  {
+    prompt: "旅行 (りょこう)",
+    options: ["travel", "study", "work", "meal"],
+    answer: "travel",
+  },
+  {
+    prompt: "地図 (ちず)",
+    options: ["map", "book", "menu", "ticket"],
+    answer: "map",
+  },
+  {
+    prompt: "交差点 (こうさてん)",
+    options: ["intersection", "crosswalk", "traffic light", "roundabout"],
+    answer: "intersection",
+  },
+  {
+    prompt: "信号 (しんごう)",
+    options: ["traffic light", "map", "bus stop", "bridge"],
+    answer: "traffic light",
+  },
+  {
+    prompt: "横断歩道 (おうだんほどう)",
+    options: ["crosswalk", "alley", "bus lane", "tunnel"],
+    answer: "crosswalk",
+  },
+  {
+    prompt: "向かい (むかい)",
+    options: ["across from", "next to", "behind", "in front of"],
+    answer: "across from",
+  },
+  {
+    prompt: "近所 (きんじょ)",
+    options: ["neighborhood", "countryside", "town hall", "downtown"],
+    answer: "neighborhood",
+  },
+  {
+    prompt: "道順 (みちじゅん)",
+    options: ["directions", "distance", "road", "schedule"],
+    answer: "directions",
+  },
+  {
+    prompt: "突き当たり (つきあたり)",
+    options: ["end of the road", "intersection", "bridge", "corner"],
+    answer: "end of the road",
+  },
+  {
+    prompt: "商店街 (しょうてんがい)",
+    options: ["shopping street", "convenience store", "mall", "market stall"],
+    answer: "shopping street",
+  },
+  {
+    prompt: "駐車場 (ちゅうしゃじょう)",
+    options: ["parking lot", "rest stop", "garage", "intersection"],
+    answer: "parking lot",
+  },
+  {
+    prompt: "文房具 (ぶんぼうぐ)",
+    options: ["stationery", "textbook", "locker", "calendar"],
+    answer: "stationery",
+  },
+  {
+    prompt: "地理 (ちり)",
+    options: ["geography", "biology", "physics", "civics"],
+    answer: "geography",
+  },
+  {
+    prompt: "体育館 (たいいくかん)",
+    options: ["gymnasium", "library", "dormitory", "auditorium"],
+    answer: "gymnasium",
+  },
+  {
+    prompt: "校庭 (こうてい)",
+    options: ["schoolyard", "classroom", "hallway", "office"],
+    answer: "schoolyard",
+  },
+  {
+    prompt: "改札口 (かいさつぐち)",
+    options: ["ticket gate", "elevator", "entrance", "platform"],
+    answer: "ticket gate",
+  },
+  {
+    prompt: "乗り換え (のりかえ)",
+    options: ["transfer", "delay", "fare", "arrival"],
+    answer: "transfer",
+  },
+  {
+    prompt: "時刻表 (じこくひょう)",
+    options: ["timetable", "receipt", "brochure", "reservation"],
+    answer: "timetable",
+  },
+  {
+    prompt: "片道切符 (かたみちきっぷ)",
+    options: [
+      "one-way ticket",
+      "round-trip ticket",
+      "monthly pass",
+      "express ticket",
+    ],
+    answer: "one-way ticket",
+  },
+  {
+    prompt: "定期券 (ていきけん)",
+    options: ["commuter pass", "reservation", "ticket stub", "parking permit"],
+    answer: "commuter pass",
+  },
+  {
+    prompt: "観光地 (かんこうち)",
+    options: ["tourist spot", "capital city", "train station", "embassy"],
+    answer: "tourist spot",
+  },
+  {
+    prompt: "領収書 (りょうしゅうしょ)",
+    options: ["receipt", "passport", "ticket", "invoice"],
+    answer: "receipt",
+  },
+  {
+    prompt: "郵便局 (ゆうびんきょく)",
+    options: ["post office", "library", "hospital", "bank"],
+    answer: "post office",
+  },
+  {
+    prompt: "病院 (びょういん)",
+    options: ["hospital", "school", "clinic", "museum"],
+    answer: "hospital",
+  },
+  {
+    prompt: "速い (はやい)",
+    options: ["fast", "slow", "early", "quiet"],
+    answer: "fast",
+  },
+  {
+    prompt: "遅い (おそい)",
+    options: ["slow", "heavy", "deep", "far"],
+    answer: "slow",
+  },
+  {
+    prompt: "地下一階 (ちかいっかい)",
+    options: ["basement first floor", "ground floor", "second floor", "attic"],
+    answer: "basement first floor",
+  },
+  {
+    prompt: "台所 (だいどころ)",
+    options: ["kitchen", "bathroom", "living room", "balcony"],
+    answer: "kitchen",
+  },
+  {
+    prompt: "授業 (じゅぎょう)",
+    options: ["class", "exam", "homework", "textbook"],
+    answer: "class",
+  },
+  {
+    prompt: "大使館 (たいしかん)",
+    options: ["embassy", "airport", "school", "city hall"],
+    answer: "embassy",
+  },
+  {
+    prompt: "返す (かえす)",
+    options: ["return (something)", "borrow", "pay", "bring"],
+    answer: "return (something)",
+  },
+  {
+    prompt: "晴れ (はれ)",
+    options: ["sunny", "rainy", "cloudy", "windy"],
+    answer: "sunny",
+  },
+  {
+    prompt: "状況 (じょうきょう)",
+    options: ["situation", "location", "accident", "announcement"],
+    answer: "situation",
+  },
+  {
+    prompt: "訪ねる (たずねる)",
+    options: ["to visit", "to ask", "to talk", "to enter"],
+    answer: "to visit",
+  },
+  {
+    prompt: "参加する (さんかする)",
+    options: ["to participate", "to decide", "to walk", "to cook"],
+    answer: "to participate",
+  },
+  {
+    prompt: "場合 (ばあい)",
+    options: ["case / situation", "example", "reason", "way"],
+    answer: "case / situation",
+  },
+  {
+    prompt: "経験 (けいけん)",
+    options: ["experience", "memory", "result", "practice"],
+    answer: "experience",
+  },
+  {
+    prompt: "必要 (ひつよう)",
+    options: ["necessary", "difficult", "funny", "dangerous"],
+    answer: "necessary",
+  },
+  {
+    prompt: "発音 (はつおん)",
+    options: ["pronunciation", "language", "sound", "expression"],
+    answer: "pronunciation",
+  },
+  {
+    prompt: "連絡 (れんらく)",
+    options: ["contact", "discussion", "preparation", "invitation"],
+    answer: "contact",
+  },
+  {
+    prompt: "以上 (いじょう)",
+    options: ["more than", "less than", "equal to", "none"],
+    answer: "more than",
+  },
+  {
+    prompt: "不足 (ふそく)",
+    options: ["shortage", "excess", "balance", "error"],
+    answer: "shortage",
+  },
 ];
 
-export const LIST_LENGTH = 50;
+export const LIST_LENGTH = 30;

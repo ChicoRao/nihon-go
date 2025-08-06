@@ -117,7 +117,6 @@ function Typing() {
           total={LIST_LENGTH}
           time={timeTaken}
           onRestart={restart}
-          onClose={() => setIsDone(false)}
         />
       )}
     </>
