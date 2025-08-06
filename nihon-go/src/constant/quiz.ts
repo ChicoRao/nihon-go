@@ -685,8 +685,8 @@ export const quizQuestions = [
   },
   {
     prompt: "信号 (しんごう)",
-    options: ["traffic light", "map", "bus stop", "bridge"],
-    answer: "traffic light",
+    options: ["signal/traffic light", "map", "bus stop", "bridge"],
+    answer: "signal/traffic light",
   },
   {
     prompt: "横断歩道 (おうだんほどう)",
