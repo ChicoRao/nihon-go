@@ -45,7 +45,7 @@ function Typing() {
 
     // Correct answer
     let newScore = score;
-    if (romajiList.includes(typedText)) {
+    if (romajiList.includes(typedText.toLowerCase())) {
       newScore += 1;
     }
 
